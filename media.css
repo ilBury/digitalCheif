@@ -1,0 +1,78 @@
+@media (max-width: 1700px) {
+    #contacts__photo {
+        display: none;
+    }
+   
+}
+@media (max-width: 1440px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .main > .socials {
+        display: none;
+    }
+    .container, .main__container {
+        width: 100%;
+    }
+    .main__container {
+        padding-left: 50px;
+    }
+    .column {
+        justify-content: center;
+    }
+    
+}
+@media (max-width: 768px) {
+    .main__title {
+        font-size: 26px;
+        line-height: 39px;
+        font-weight: 800;
+    }
+    .main__container {
+        padding-left: 10px;
+    }
+    .contacts > .container {
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    .contacts__content > .title, .title {
+        font-size: 24px;
+        line-height: 36px;
+        padding-bottom: 15px;
+    }
+    #add-form {
+        flex-direction: column;
+    }
+    #name, #mail, #message {
+        width: calc(300px - 40px);
+    }
+    .description__text {
+        width: 250px
+    }
+    .description {
+        padding-top: 10px;
+    }
+    #main__img {
+        right: -600px;
+    }
+    .menu {
+        width: 250px;
+    }
+    .properties {
+        padding-left: 20px;   
+    }
+    .menu__content {
+        position: relative;
+        flex-direction: column;
+    }
+    #exit {
+        right: 0;
+        position: absolute;
+    }
+}
