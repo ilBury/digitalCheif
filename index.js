@@ -50,6 +50,13 @@ function addValidMailMessage(field) {
     field.parentNode.append(validMailSpan);
 }
 
+function delMessage(field) {
+    let del = document.querySelectorAll('.required');
+    del.forEach(el => {
+        el.remove();
+    })
+}
+
 //
 function scrollTo() {
     window.scroll({
@@ -109,10 +116,10 @@ document.querySelector('#add-form').addEventListener('submit', function(event) {
        
     } 
     
-    if(data) {
+    if(data.length === 3) {
+        delMessage();
         postData('#', JSON.stringify(data))
             .then(res => {
-                console.log(res);
                 alert('Successful')
             })
             .catch(() => console.log('error'))

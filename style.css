@@ -19,7 +19,7 @@ section {
   background-color: #FFFFFF;
   opacity: 0;
   z-index: -10;
-  transition: all ease 2s;
+  transition: all ease 1s;
 }
 .menu {
   left: -345px;
